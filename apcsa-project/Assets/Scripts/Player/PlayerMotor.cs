@@ -10,7 +10,8 @@ public class PlayerMotor : MonoBehaviour
     private bool isGrounded;
     public float speed = 5f;
     public float gravity = -9.8f;
-    public float jumpHeight = 1.5f;
+    public float jumpHeight = 1f;
+    public bool sprinting = false;
     void Start()
     {
         controller = GetComponent<CharacterController>();
@@ -20,6 +21,14 @@ public class PlayerMotor : MonoBehaviour
     void Update()
     {
         isGrounded = controller.isGrounded;
+        if(sprinting){
+            if(Input.GetKey(KeyCode.LeftShift)){
+                speed = 10f;
+            } else {
+                speed = 5f;
+                sprinting = false;
+            }
+        }
     }
 
 // Basically this recieves input from InputManager.cs and apply them to our character controller
@@ -41,4 +50,9 @@ public class PlayerMotor : MonoBehaviour
             playerVelocity.y = Mathf.Sqrt(jumpHeight * -3.0f * gravity);
         }
     }
+
+    public void Sprint(){
+        sprinting = !sprinting;
+    }
+
 }

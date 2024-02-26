@@ -20,6 +20,7 @@ public class InputManager : MonoBehaviour
         look = GetComponent<PlayerLook>();
         
         onFoot.Jump.performed += ctx => motor.Jump(); // There are 3 types of this, performed,started,and cancelled
+        onFoot.Sprint.performed += ctx => motor.Sprint();
     }
 
     // Update is called once per frame
