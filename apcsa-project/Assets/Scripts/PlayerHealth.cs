@@ -23,6 +23,15 @@ public class NewBehaviourScript : MonoBehaviour
     {
         health = Mathf.Clamp(health, 0, maxHealth);
         UpdateHealthUI();
+
+        if(Input.GetKeyDown(KeyCode.Z))
+        {
+            TakeDamage(Random.Range(5, 10));
+        }
+        if(Input.GetKeyDown(KeyCode.X))
+        {
+            RestoreHealth(Random.Range(5, 10));
+        }
         
     }
 
