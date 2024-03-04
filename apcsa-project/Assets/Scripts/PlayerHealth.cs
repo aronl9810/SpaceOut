@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class NewBehaviourScript : MonoBehaviour
+public class PlayerHealth : MonoBehaviour
 {
     private float health;
     private float lerpTimer;
@@ -22,7 +22,7 @@ public class NewBehaviourScript : MonoBehaviour
     void Update()
     {
         health = Mathf.Clamp(health, 0, maxHealth);
-        UpdateHealthUI();
+        
 
         if(Input.GetKeyDown(KeyCode.Z))
         {
@@ -32,7 +32,7 @@ public class NewBehaviourScript : MonoBehaviour
         {
             RestoreHealth(Random.Range(5, 10));
         }
-        
+        UpdateHealthUI();
     }
 
     public void UpdateHealthUI()
