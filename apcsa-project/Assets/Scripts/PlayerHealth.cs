@@ -22,7 +22,7 @@ public class PlayerHealth : MonoBehaviour
     void Update()
     {
         health = Mathf.Clamp(health, 0, maxHealth);
-        
+        UpdateHealthUI();
 
         if(Input.GetKeyDown(KeyCode.Z))
         {
@@ -32,7 +32,7 @@ public class PlayerHealth : MonoBehaviour
         {
             RestoreHealth(Random.Range(5, 10));
         }
-        UpdateHealthUI();
+        
     }
 
     public void UpdateHealthUI()
