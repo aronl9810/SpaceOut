@@ -7263,8 +7263,6 @@ GameObject:
   - component: {fileID: 645131231}
   - component: {fileID: 645131233}
   - component: {fileID: 645131232}
-  - component: {fileID: 645131234}
-  - component: {fileID: 645131235}
   m_Layer: 5
   m_Name: Ammo
   m_TagString: Untagged
@@ -7368,7 +7366,7 @@ MonoBehaviour:
   m_isCullingEnabled: 0
   m_horizontalMapping: 0
   m_verticalMapping: 0
-  m_uvLineOffset: 0
+  m_uvLineOffset: 50
   m_geometrySortingOrder: 0
   m_IsTextObjectScaleStatic: 0
   m_VertexBufferAutoSizeReduction: 0
@@ -7388,31 +7386,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 645131230}
   m_CullTransparentMesh: 1
---- !u!114 &645131234
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 645131230}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2397ce7ecd5e1df42b0b3f381fa2d64d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  promptText: {fileID: 645131232}
---- !u!114 &645131235
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 645131230}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a7e3585cc5829a4a85e40316f9069db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &705410058
 GameObject:
   m_ObjectHideFlags: 0
@@ -11457,6 +11430,7 @@ GameObject:
   - component: {fileID: 1919959644}
   - component: {fileID: 1919959643}
   - component: {fileID: 1919959642}
+  - component: {fileID: 1919959646}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -11549,6 +11523,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1919959646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919959641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a7e3585cc5829a4a85e40316f9069db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grabGun: {fileID: 1759399613}
+  guntext: {fileID: 645131232}
 --- !u!1 &1977376697
 GameObject:
   m_ObjectHideFlags: 0

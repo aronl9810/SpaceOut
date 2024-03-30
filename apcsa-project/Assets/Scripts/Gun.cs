@@ -32,7 +32,6 @@ public class Gun : MonoBehaviour
                             OnGunShoot?.Invoke();
                             muzzleFlash.Play();
                             Ammo--;
-                            Debug.Log("Ammo: " + Ammo);
                             // Debug.Log("Shooting automatic");
                             CurrentCooldown = FireCooldown;
                         }
@@ -43,7 +42,6 @@ public class Gun : MonoBehaviour
                             OnGunShoot?.Invoke();
                             muzzleFlash.Play();
                             Ammo--;
-                            Debug.Log("Ammo: " + Ammo);
                             // Debug.Log("Shooting semiautomatic");
                             CurrentCooldown = FireCooldown;
                         }
@@ -70,6 +68,7 @@ public class Gun : MonoBehaviour
 
     public void Reload(){
         isreloading = !isreloading;
+        reloadTime = currentReloadTime;
     }
 
     public void FinishReload(){
@@ -78,5 +77,8 @@ public class Gun : MonoBehaviour
         reloadTime = currentReloadTime;
     }
 
+    public int getAmmo(){
+        return Ammo;
+    }
 
 }
