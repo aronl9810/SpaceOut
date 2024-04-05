@@ -81,4 +81,8 @@ public class Gun : MonoBehaviour
         return Ammo;
     }
 
+    public float getReloadTime(){
+        return reloadTime;
+    }
+
 }

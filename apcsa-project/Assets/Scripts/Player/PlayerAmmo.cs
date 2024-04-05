@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class PlayerAmmo : MonoBehaviour
@@ -11,6 +12,8 @@ public class PlayerAmmo : MonoBehaviour
     private TextMeshProUGUI guntext;
     private int currentammo;
     private string field;
+    public Image reload;
+    private float reloadtime;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +25,8 @@ public class PlayerAmmo : MonoBehaviour
     void Update()
     {
         currentammo = grabGun.getAmmo();
-        field = "Ammo: " + currentammo + "";
+        reloadtime = grabGun.getReloadTime();
+        field = "" + currentammo + "";
         guntext.text = field;
     }
 }
