@@ -2,21 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class HealthManager : MonoBehaviour
 {
     public float healthAmount = 100f;
+    private float initalHealthAmount;
     public Image healthBar;
+    [SerializeField]
+    private TextMeshProUGUI healthText;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        initalHealthAmount = healthAmount;
     }
 
     // Update is called once per frame
     void Update()
     {
+        healthText.text = "" + healthAmount + "/" + initalHealthAmount;
         if(healthAmount <= 0) 
         {
             Application.LoadLevel(Application.loadedLevel);
