@@ -6,7 +6,7 @@ using TMPro;
 
 public class HealthManager : MonoBehaviour
 {
-    public float healthAmount = 100f;
+    public float healthAmount;
     private float initalHealthAmount;
     public Image healthBar;
     [SerializeField]
@@ -41,14 +41,14 @@ public class HealthManager : MonoBehaviour
     public void TakeDamage(float damage)
     {
         healthAmount -= damage;
-        healthBar.fillAmount = healthAmount / 100f;
+        healthBar.fillAmount = healthAmount / initalHealthAmount;
     }
 
     public void Heal (float healingAmount)
     {
         healthAmount += healingAmount;
-        healthAmount = Mathf.Clamp(healthAmount, 0 , 100);
+        healthAmount = Mathf.Clamp(healthAmount, 0 , initalHealthAmount);
 
-        healthBar.fillAmount = healthAmount / 100f;
+        healthBar.fillAmount = healthAmount / initalHealthAmount;
     }
 }
