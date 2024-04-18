@@ -35,7 +35,7 @@ public class HealthManager : MonoBehaviour
         {
             Heal(5);   
         }
-        Debug.Log(healthAmount);
+        // Debug.Log(healthAmount);
     }
 
     public void TakeDamage(float damage)
