@@ -51,4 +51,8 @@ public class HealthManager : MonoBehaviour
 
         healthBar.fillAmount = healthAmount / initalHealthAmount;
     }
+
+    public float getMaxHealth(){
+        return initalHealthAmount;
+    }
 }

@@ -1000,6 +1000,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   useEvents: 0
   promptMessage: Use Large Healthpack?
+  getHealthManagerScript: {fileID: 417718268577513868}
+  healthSize: 2
 --- !u!65 &94003548
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7165,6 +7167,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   useEvents: 0
   promptMessage: Use Small HealthPack?
+  getHealthManagerScript: {fileID: 417718268577513868}
+  healthSize: 0
 --- !u!65 &305804666
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18395,6 +18399,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   useEvents: 0
   promptMessage: Use Medium HealthPack?
+  getHealthManagerScript: {fileID: 417718268577513868}
+  healthSize: 1
 --- !u!65 &2142618667
 BoxCollider:
   m_ObjectHideFlags: 0

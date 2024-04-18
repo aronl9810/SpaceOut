@@ -28,9 +28,9 @@ public class PlayerInteract : MonoBehaviour
         Debug.DrawRay(ray.origin, ray.direction * distance);
         RaycastHit hitInfo; // Variable to store collision information
         if (Physics.Raycast(ray, out hitInfo, distance, mask)){
-            Debug.Log("First Condition Passed");
+            // Debug.Log("First Condition Passed");
             if(hitInfo.collider.GetComponent<Interactable>() != null){
-                Debug.Log(hitInfo.collider.GetComponent<Interactable>().promptMessage);
+                // Debug.Log(hitInfo.collider.GetComponent<Interactable>().promptMessage);
                 Interactable interactable = hitInfo.collider.GetComponent<Interactable>();
                 playerUI.UpdateText(interactable.promptMessage);
                 if(inputManager.onFoot.Interact.triggered){
