@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class Gun : MonoBehaviour
 {
+
+    // Gun Stuff
     public UnityEvent OnGunShoot;
     public int Ammo;
     private int startingAmmo;
@@ -13,6 +15,13 @@ public class Gun : MonoBehaviour
     public bool Automatic;
     public ParticleSystem muzzleFlash;
     private float CurrentCooldown;
+
+    // Bullet Stuff
+    public GameObject Bullet;
+    public Camera fpsCamera;
+    public Transform attackPoint;
+    public float shootForce, upwardForce;
+
     
     void Start()
     {
@@ -29,6 +38,23 @@ public class Gun : MonoBehaviour
                 if(Automatic){
                     if(Input.GetMouseButton(0)){
                         if(CurrentCooldown <= 0f){
+                            Ray ray = fpsCamera.ViewportPointToRay(new Vector3(0.5f , 0.5f , 0));
+                            RaycastHit hit;
+                            
+                            Vector3 targetPoint;
+                            if(Physics.Raycast(ray, out hit)){
+                                targetPoint = hit.point;
+                            } else {
+                                targetPoint = ray.GetPoint(75);
+                            }
+
+                            Vector3 directionWithoutSpread = targetPoint - attackPoint.position;
+
+                            GameObject currentBullet = Instantiate(Bullet , attackPoint.position, Quaternion.identity);
+
+                            currentBullet.GetComponent<Rigidbody>().AddForce(directionWithoutSpread.normalized * shootForce , ForceMode.Impulse);
+                            currentBullet.GetComponent<Rigidbody>().AddForce(fpsCamera.transform.up * upwardForce, ForceMode.Impulse);
+                            Physics.IgnoreLayerCollision(6,7);
                             OnGunShoot?.Invoke();
                             muzzleFlash.Play();
                             Ammo--;
