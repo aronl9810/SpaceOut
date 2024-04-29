@@ -13,6 +13,8 @@ public class Gun : MonoBehaviour
     private bool isreloading;
     public float FireCooldown;
     public bool Automatic;
+    public AudioSource getAudio;
+    public AudioClip sfx1;
     public ParticleSystem muzzleFlash;
     private float CurrentCooldown;
 
@@ -21,7 +23,6 @@ public class Gun : MonoBehaviour
     public Camera fpsCamera;
     public Transform attackPoint;
     public float shootForce, upwardForce;
-
     
     void Start()
     {
@@ -57,6 +58,8 @@ public class Gun : MonoBehaviour
                             Physics.IgnoreLayerCollision(6,7);
                             OnGunShoot?.Invoke();
                             muzzleFlash.Play();
+                            getAudio.clip = sfx1;
+                            getAudio.Play();
                             Ammo--;
                             // Debug.Log("Shooting automatic");
                             CurrentCooldown = FireCooldown;
