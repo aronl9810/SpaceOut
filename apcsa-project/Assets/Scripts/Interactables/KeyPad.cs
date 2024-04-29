@@ -21,8 +21,9 @@ public class KeyPad : Interactable
     // This is where we design our interaction using code
     protected override void Interact(){
         // base.Interact();
-        doorOpen = !doorOpen;
-        Debug.Log(doorOpen);
+        doorOpen = true;
+        // Debug.Log(doorOpen);
         door.GetComponent<Animator>().SetBool("isOpen", doorOpen);
+        promptMessage = "Good luck!";
     }
 }
