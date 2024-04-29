@@ -7,6 +7,7 @@ public class PlayerMotor : MonoBehaviour
     // Start is called before the first frame update
     private CharacterController controller;
     private Vector3 playerVelocity;
+    public ViewBobbing bobbing;
     private bool isGrounded;
     public float speed = 5f;
     public float gravity = -9.8f;
@@ -24,9 +25,11 @@ public class PlayerMotor : MonoBehaviour
         if(sprinting){
             if(Input.GetKey(KeyCode.LeftShift)){
                 speed = 10f;
+                bobbing.spintEffect();
             } else {
-                speed = 5f;
+                speed = 6.5f;
                 sprinting = false;
+                bobbing.afterSprintEffect();
             }
         }
     }
