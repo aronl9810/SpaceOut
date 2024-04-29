@@ -25,7 +25,7 @@ public class HealthManager : MonoBehaviour
         healthText.text = "" + healthAmount + "/" + initalHealthAmount;
         if(healthAmount <= 0) 
         {
-            Application.LoadLevel(Application.loadedLevel);
+            SceneManager.LoadScene("Defeat");
         }
 
         if(Input.GetKeyDown(KeyCode.Z))
