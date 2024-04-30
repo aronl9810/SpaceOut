@@ -15,8 +15,8 @@ TagManager:
   - Gun
   - Bullet
   - Camera
-  - 
-  - 
+  - Enemy
+  - EnemyGun
   - 
   - 
   - 
