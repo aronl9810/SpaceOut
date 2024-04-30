@@ -55,7 +55,7 @@ public class PlayerMotor : MonoBehaviour
             footsteps.SetActive(false);
         }
         controller.Move(playerVelocity * Time.deltaTime);
-        Debug.Log(moveDirection);
+        // Debug.Log(moveDirection);
     }
     
     public void Jump(){
