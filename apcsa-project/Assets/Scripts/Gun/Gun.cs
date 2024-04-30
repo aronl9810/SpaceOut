@@ -23,6 +23,11 @@ public class Gun : MonoBehaviour
     public Camera fpsCamera;
     public Transform attackPoint;
     public float shootForce, upwardForce;
+
+    // Charging Handle
+    [SerializeField]
+    public GameObject charginghandle;
+    private bool currentlyfiring;
     
     void Start()
     {
@@ -34,11 +39,15 @@ public class Gun : MonoBehaviour
 
     void Update()
     {
+        currentlyfiring = false;
+        charginghandle.GetComponent<Animator>().SetBool("isFiring", currentlyfiring);
         if(Ammo > 0){
             if(!isreloading){
                 if(Automatic){
                     if(Input.GetMouseButton(0)){
                         if(CurrentCooldown <= 0f){
+                            currentlyfiring = true;
+                            charginghandle.GetComponent<Animator>().SetBool("isFiring", currentlyfiring);
                             Ray ray = fpsCamera.ViewportPointToRay(new Vector3(0.5f , 0.5f , 0));
                             RaycastHit hit;
                             

@@ -13,6 +13,7 @@ public class PlayerMotor : MonoBehaviour
     public float gravity = -9.8f;
     public float jumpHeight = 1f;
     public bool sprinting = false;
+    public GameObject footsteps;
     void Start()
     {
         controller = GetComponent<CharacterController>();
@@ -21,6 +22,7 @@ public class PlayerMotor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // footsteps.SetActive(false);
         isGrounded = controller.isGrounded;
         if(sprinting){
             if(Input.GetKey(KeyCode.LeftShift)){
@@ -36,6 +38,7 @@ public class PlayerMotor : MonoBehaviour
 
 // Basically this recieves input from InputManager.cs and apply them to our character controller
     public void ProcessMove(Vector2 input){
+        Vector3 defaultposition = new Vector3(0,0,0);
         Vector3 moveDirection = Vector3.zero;
         moveDirection.x = input.x;
         moveDirection.z = input.y;
@@ -43,9 +46,16 @@ public class PlayerMotor : MonoBehaviour
         playerVelocity.y += gravity * Time.deltaTime;
         if(isGrounded && playerVelocity.y < 0){
             playerVelocity.y = -2f;
+            if(moveDirection == defaultposition){
+                footsteps.SetActive(false);
+            } else {
+                footsteps.SetActive(true);
+            }
+        } else {
+            footsteps.SetActive(false);
         }
         controller.Move(playerVelocity * Time.deltaTime);
-        // Debug.Log(playerVelocity.y);
+        Debug.Log(moveDirection);
     }
     
     public void Jump(){
@@ -57,5 +67,10 @@ public class PlayerMotor : MonoBehaviour
     public void Sprint(){
         sprinting = !sprinting;
     }
+
+    public bool getSprint(){
+        return sprinting;
+    }
+
 
 }
