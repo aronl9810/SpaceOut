@@ -5,13 +5,13 @@ using UnityEngine;
 public class StateMachine : MonoBehaviour
 {
     public BaseState activeState;
-    public PatrolState patrolState;
+    // public PatrolState patrolState;
     // property for the patrol state.
 
     public void Intialise()
     {
-        patrolState = new PatrolState();
-        changeState(patrolState);
+        // patrolState = new PatrolState();
+        changeState(new PatrolState());
     }
     // Start is called before the first frame update
     void Start()
