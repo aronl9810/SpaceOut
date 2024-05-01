@@ -12,7 +12,11 @@ public class PatrolState : BaseState
     }
     public override void Perform()
     {
+        // Debug.Log("Perform activated : PatrolState");
         PatrolCycle();
+        if(enemy.CanSeePlayer()){
+            stateMachine.changeState(new AttackState());
+        }
     }
     public override void Exit()
     {
