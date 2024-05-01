@@ -84,17 +84,20 @@ public class Gun : MonoBehaviour
                             CurrentCooldown = FireCooldown;
                         }
                     }
+                    
                 }
             }
         }
         CurrentCooldown -= Time.deltaTime;
-
         if(Input.GetKeyDown(KeyCode.R)){
             if(Ammo != startingAmmo){
                 Reload();
             }
         }
-
+        if (Input.GetMouseButtonDown(0) && Ammo == 0)
+        {
+            Reload();
+        }
         if(isreloading){
             reloadTime -= Time.deltaTime;
         }

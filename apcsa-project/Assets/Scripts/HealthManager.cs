@@ -37,6 +37,10 @@ public class HealthManager : MonoBehaviour
             Heal(5);   
         }
         // Debug.Log(healthAmount);
+        if(Input.GetKeyDown(KeyCode.Q))
+        {
+            SceneManager.LoadScene("QuitMenu");
+        }
     }
 
     public void TakeDamage(float damage)
