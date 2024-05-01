@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.46613795, g: 0.46583652, b: 0.46192998, a: 1}
+  m_IndirectSpecularColor: {r: 0.4660946, g: 0.46579224, b: 0.46188897, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -27933,6 +27933,7 @@ GameObject:
   - component: {fileID: 1710911370}
   - component: {fileID: 1710911375}
   - component: {fileID: 1710911369}
+  - component: {fileID: 1710911376}
   m_Layer: 8
   m_Name: Bullet
   m_TagString: Untagged
@@ -28053,6 +28054,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1710911376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710911368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d52b10d00479d848942a4c04a2413b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletParticle: {fileID: 213433058}
 --- !u!1 &1714529306
 GameObject:
   m_ObjectHideFlags: 0
