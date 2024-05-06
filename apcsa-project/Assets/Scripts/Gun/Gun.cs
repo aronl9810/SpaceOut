@@ -5,26 +5,30 @@ public class Gun : MonoBehaviour
 {
 
     // Gun Stuff
-    public UnityEvent OnGunShoot;
-    public int Ammo;
     private int startingAmmo;
-    public float reloadTime;
     private float currentReloadTime;
     private bool isreloading;
+    private float CurrentCooldown;
+    public UnityEvent OnGunShoot;
+    [Header("Gun Stats")]
+    public int Ammo;
+    public float reloadTime;
     public float FireCooldown;
     public bool Automatic;
+    [Header("Audio")]
     public AudioSource getAudio;
     public AudioClip sfx1;
     public ParticleSystem muzzleFlash;
-    private float CurrentCooldown;
 
     // Bullet Stuff
+    [Header("Bullets")]
     public GameObject Bullet;
     public Camera fpsCamera;
     public Transform attackPoint;
     public float shootForce, upwardForce;
 
     // Charging Handle
+    [Header("Charging Handle")]
     [SerializeField]
     public GameObject charginghandle;
     private bool currentlyfiring;

@@ -8,6 +8,7 @@ public class AttackState : BaseState
 
     private float moveTimer;
     private float losePlayerTimer;
+    private float shotTimer;
 
     public override void Enter(){
 
@@ -23,6 +24,11 @@ public class AttackState : BaseState
             // Debug.Log("Attack State can see player");
             losePlayerTimer = 0;
             moveTimer += Time.deltaTime;
+            shotTimer += Time.deltaTime;
+            enemy.transform.LookAt(enemy.Player.transform);
+            if(shotTimer > enemy.fireRate){
+                Shoot();
+            }
             if (moveTimer > Random.Range(3,7)){
                 enemy.Agent.SetDestination(enemy.transform.position + (Random.insideUnitSphere * 5));
                 moveTimer = 0;
@@ -34,6 +40,19 @@ public class AttackState : BaseState
                 stateMachine.changeState(new PatrolState());
             }
         }
+    }
+
+    public void Shoot(){
+        Debug.Log("Shoot");
+        // Store reference to gun barrel
+        Transform gunbarrel = enemy.gunBarrel;
+        // Create new Bullet
+        GameObject bullet = GameObject.Instantiate(Resources.Load("Prefabs/Enemy Bullet") as GameObject, gunbarrel.position, enemy.transform.rotation);
+        // Calculate direction to the player
+        Vector3 shootDirection = (enemy.Player.transform.position - gunbarrel.transform.position).normalized;
+        // Add force rigidbody of the bullet
+        bullet.GetComponent<Rigidbody>().velocity = Quaternion.AngleAxis(Random.Range(-3f,3f), Vector3.up) * shootDirection * 80;
+        shotTimer = 0;
     }
     void Start()
     {
