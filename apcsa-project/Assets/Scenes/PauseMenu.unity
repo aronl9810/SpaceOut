@@ -1152,7 +1152,7 @@ GameObject:
   - component: {fileID: 1207401304}
   - component: {fileID: 1207401303}
   m_Layer: 0
-  m_Name: MainMenuCanvas
+  m_Name: PauseMenuCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1279,7 +1279,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 334}
+  m_AnchoredPosition: {x: 0, y: 310}
   m_SizeDelta: {x: 1054.3418, y: 138.5019}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1390722654
@@ -1711,7 +1711,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1554950893
 RectTransform:
   m_ObjectHideFlags: 0
