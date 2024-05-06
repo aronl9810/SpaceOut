@@ -9,9 +9,11 @@ public class Enemy : MonoBehaviour
     private StateMachine stateMachine;
     private UnityEngine.AI.NavMeshAgent agent;
     private GameObject player;
+    private Vector3 lastKnowPos;
     public UnityEngine.AI.NavMeshAgent Agent { get => agent;}
     public Path path;
     public GameObject Player { get => player; }
+    public Vector3 LastKnowPos { get => lastKnowPos ; set => lastKnowPos = value; }
     [Header("Sight Values")]
     //just for debugging purposes
     public float sightDistance = 20f;
