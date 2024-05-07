@@ -5,6 +5,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
 
+
     void Update(){
         Physics.IgnoreLayerCollision(7,8);
     }

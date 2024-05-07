@@ -9,6 +9,7 @@ public class BulletScript : MonoBehaviour
     [Header("Audio")]
     public AudioSource getAudio;
     public AudioClip sfx1;
+    public Crosshair getCrosshair;
 
     void Update(){
         Physics.IgnoreLayerCollision(7,8);
@@ -23,6 +24,7 @@ public class BulletScript : MonoBehaviour
             hitTransform.GetComponent<Enemy>().TakeDamage(20);
             getAudio.clip = sfx1;
             getAudio.Play();
+            getCrosshair.hitEnemy();          
         }
         Destroy(gameObject);
         bulletParticle.transform.position = position;

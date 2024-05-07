@@ -12,6 +12,9 @@ public class HealthManager : MonoBehaviour
     public Image healthBar;
     [SerializeField]
     private TextMeshProUGUI healthText;
+    [Header("Audio")]
+    public AudioSource getAudio;
+    public AudioClip sfx1;
 
     // Start is called before the first frame update
     void Start()
@@ -47,6 +50,8 @@ public class HealthManager : MonoBehaviour
     {
         healthAmount -= damage;
         healthBar.fillAmount = healthAmount / initalHealthAmount;
+        getAudio.clip = sfx1;
+        getAudio.Play();
     }
 
     public void Heal (float healingAmount)
