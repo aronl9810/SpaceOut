@@ -10,10 +10,14 @@ public class Enemy : MonoBehaviour
     private UnityEngine.AI.NavMeshAgent agent;
     private GameObject player;
     private Vector3 lastKnowPos;
+    private float initialHealthAmount;
+    
     public UnityEngine.AI.NavMeshAgent Agent { get => agent;}
     public Path path;
     public GameObject Player { get => player; }
     public Vector3 LastKnowPos { get => lastKnowPos ; set => lastKnowPos = value; }
+    [Header("Health")]
+    public float healthAmount;
     [Header("Sight Values")]
     //just for debugging purposes
     public float sightDistance = 20f;
@@ -32,6 +36,11 @@ public class Enemy : MonoBehaviour
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
         stateMachine.Intialise();
         player = GameObject.FindGameObjectWithTag("Player");
+        if(healthAmount <= 0){
+            Debug.Log("Heads up! Your enemy health cannot be below or exactly 0! Defaulting to 100");
+            healthAmount = 100;
+        }
+        initialHealthAmount = healthAmount;
     }
 
     // Update is called once per frame
@@ -40,6 +49,13 @@ public class Enemy : MonoBehaviour
         CanSeePlayer();
         // Debug.Log(player);
         currentState = stateMachine.activeState.ToString();
+        if(healthAmount <= 0){
+            Destroy(gameObject);
+        }
+    }
+
+    public void TakeDamage(float damagevalue){
+        healthAmount -= damagevalue;
     }
 
     public bool CanSeePlayer(){

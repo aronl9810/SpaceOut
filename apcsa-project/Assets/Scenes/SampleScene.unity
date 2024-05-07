@@ -9714,6 +9714,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   path: {fileID: 439330363}
+  healthAmount: 100
   sightDistance: 20
   fieldOfView: 85
   eyeHeight: 0
@@ -18921,6 +18922,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   path: {fileID: 373173209}
+  healthAmount: 100
   sightDistance: 20
   fieldOfView: 85
   eyeHeight: 0
@@ -22200,6 +22202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   path: {fileID: 2022319389}
+  healthAmount: 100
   sightDistance: 20
   fieldOfView: 85
   eyeHeight: 0
@@ -26764,6 +26767,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   path: {fileID: 1103143546}
+  healthAmount: 100
   sightDistance: 20
   fieldOfView: 85
   eyeHeight: 0
@@ -32436,6 +32440,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   path: {fileID: 250805815}
+  healthAmount: 100
   sightDistance: 20
   fieldOfView: 85
   eyeHeight: 0
@@ -34110,6 +34115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   path: {fileID: 1871077616}
+  healthAmount: 100
   sightDistance: 20
   fieldOfView: 85
   eyeHeight: 0
@@ -38750,6 +38756,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   path: {fileID: 1731423498}
+  healthAmount: 100
   sightDistance: 20
   fieldOfView: 85
   eyeHeight: 0
