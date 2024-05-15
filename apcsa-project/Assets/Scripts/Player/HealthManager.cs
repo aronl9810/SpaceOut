@@ -31,14 +31,14 @@ public class HealthManager : MonoBehaviour
             SceneManager.LoadScene("Defeat");
         }
 
-        if(Input.GetKeyDown(KeyCode.Z))
-        {
-            TakeDamage(20);
-        }
-        if(Input.GetKeyDown(KeyCode.X))
-        {
-            Heal(5);   
-        }
+        // if(Input.GetKeyDown(KeyCode.Z)) // testing phase
+        // {
+        //     TakeDamage(20);
+        // }
+        // if(Input.GetKeyDown(KeyCode.X))
+        // {
+        //     Heal(5);   
+        // }
         // Debug.Log(healthAmount);
         if(Input.GetKeyDown(KeyCode.Q))
         {
