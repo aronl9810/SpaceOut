@@ -14,7 +14,7 @@ public class QuitMenu : MonoBehaviour
     void Update(){
         // Debug.Log(TimerScript.stringtimer);
         finalTime = TimerScript.stringtimer;
-        Debug.Log(finalTime);
+        // Debug.Log(finalTime);
         timerText.text = finalTime;
     }
 
