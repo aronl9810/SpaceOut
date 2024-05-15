@@ -15,6 +15,7 @@ public class HealthManager : MonoBehaviour
     [Header("Audio")]
     public AudioSource getAudio;
     public AudioClip sfx1;
+    public TimerScript getTimer;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +29,7 @@ public class HealthManager : MonoBehaviour
         healthText.text = "" + healthAmount + "/" + initalHealthAmount;
         if(healthAmount <= 0) 
         {
+            getTimer.killed();
             SceneManager.LoadScene("Defeat");
         }
 

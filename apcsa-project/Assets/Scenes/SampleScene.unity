@@ -586,7 +586,7 @@ GameObject:
   - component: {fileID: 19847364}
   m_Layer: 7
   m_Name: Cylinder
-  m_TagString: Untagged
+  m_TagString: PlayerGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1258,7 +1258,7 @@ GameObject:
   - component: {fileID: 64164335}
   m_Layer: 7
   m_Name: Cube (3)
-  m_TagString: Untagged
+  m_TagString: PlayerGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1927,7 +1927,7 @@ GameObject:
   - component: {fileID: 122451906}
   m_Layer: 7
   m_Name: Cube (11)
-  m_TagString: Untagged
+  m_TagString: PlayerGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8990,6 +8990,7 @@ MonoBehaviour:
   useEvents: 0
   promptMessage: Start the game?
   door: {fileID: 553446320}
+  timerscript: {fileID: 837280198}
 --- !u!1 &236347861
 GameObject:
   m_ObjectHideFlags: 0
@@ -10099,7 +10100,7 @@ GameObject:
   - component: {fileID: 284814066}
   m_Layer: 7
   m_Name: Particle System
-  m_TagString: Untagged
+  m_TagString: PlayerGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15254,7 +15255,7 @@ GameObject:
   - component: {fileID: 301879583}
   m_Layer: 7
   m_Name: Body
-  m_TagString: Untagged
+  m_TagString: PlayerGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15267,9 +15268,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 301879582}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.010253144, y: -0.010517505, z: -0.0033011027, w: 0.99988675}
-  m_LocalPosition: {x: 24.936134, y: -9.669648, z: 7.935728}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 1.0913935e-10, w: 1}
+  m_LocalPosition: {x: 145.72694, y: -45.974495, z: 7.972492}
+  m_LocalScale: {x: 5.694312, y: 5.0541005, z: 0.9872643}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1673080121}
@@ -15286,7 +15287,7 @@ Transform:
   - {fileID: 1594071622}
   - {fileID: 994845339}
   - {fileID: 817299984}
-  m_Father: {fileID: 1790053919}
+  m_Father: {fileID: 1759399612}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &305804664
 GameObject:
@@ -16761,7 +16762,7 @@ GameObject:
   - component: {fileID: 344851620}
   m_Layer: 7
   m_Name: Mag
-  m_TagString: Untagged
+  m_TagString: PlayerGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20662,7 +20663,7 @@ GameObject:
   - component: {fileID: 593932184}
   m_Layer: 7
   m_Name: Right
-  m_TagString: Untagged
+  m_TagString: PlayerGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21271,7 +21272,7 @@ GameObject:
   - component: {fileID: 617043097}
   m_Layer: 9
   m_Name: WeaponCamera
-  m_TagString: Untagged
+  m_TagString: PlayerGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21969,7 +21970,7 @@ GameObject:
   - component: {fileID: 642761732}
   m_Layer: 7
   m_Name: Charging Handle
-  m_TagString: Untagged
+  m_TagString: PlayerGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23813,7 +23814,7 @@ GameObject:
   - component: {fileID: 696425154}
   m_Layer: 7
   m_Name: Hands
-  m_TagString: Untagged
+  m_TagString: PlayerGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24311,7 +24312,7 @@ GameObject:
   - component: {fileID: 724366898}
   m_Layer: 7
   m_Name: Cube (4)
-  m_TagString: Untagged
+  m_TagString: PlayerGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25671,7 +25672,7 @@ GameObject:
   - component: {fileID: 817299985}
   m_Layer: 7
   m_Name: Cylinder (2)
-  m_TagString: Untagged
+  m_TagString: PlayerGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25885,7 +25886,7 @@ GameObject:
   - component: {fileID: 827835144}
   m_Layer: 7
   m_Name: Cube (1)
-  m_TagString: Untagged
+  m_TagString: PlayerGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26108,6 +26109,154 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4224716950665550266, guid: bea8f5b7da052804c9f1c93650d292fc, type: 3}
   m_PrefabInstance: {fileID: 417718268577513841}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &837280196
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 837280197}
+  - component: {fileID: 837280200}
+  - component: {fileID: 837280199}
+  - component: {fileID: 837280198}
+  m_Layer: 5
+  m_Name: Timer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &837280197
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837280196}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1919959645}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -412, y: 419}
+  m_SizeDelta: {x: 524.2961, y: 169.2962}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &837280198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837280196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76a6822dd4c73a54188dbc86440583de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerText: {fileID: 837280199}
+--- !u!114 &837280199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837280196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Head over to the red lever to start the game
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 80
+  m_fontSizeBase: 80
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: -849.2235, w: 47.260162}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &837280200
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837280196}
+  m_CullTransparentMesh: 1
 --- !u!1 &847993789
 GameObject:
   m_ObjectHideFlags: 0
@@ -27442,7 +27591,7 @@ GameObject:
   - component: {fileID: 908688591}
   m_Layer: 7
   m_Name: Left2
-  m_TagString: Untagged
+  m_TagString: PlayerGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28769,7 +28918,7 @@ GameObject:
   - component: {fileID: 991256339}
   m_Layer: 7
   m_Name: Cube (10)
-  m_TagString: Untagged
+  m_TagString: PlayerGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28874,7 +29023,7 @@ GameObject:
   - component: {fileID: 994845340}
   m_Layer: 7
   m_Name: Cylinder (1)
-  m_TagString: Untagged
+  m_TagString: PlayerGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31606,7 +31755,7 @@ GameObject:
   - component: {fileID: 1129522968}
   m_Layer: 7
   m_Name: Cube (7)
-  m_TagString: Untagged
+  m_TagString: PlayerGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33474,7 +33623,7 @@ GameObject:
   - component: {fileID: 1274864139}
   m_Layer: 7
   m_Name: Cube (6)
-  m_TagString: Untagged
+  m_TagString: PlayerGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36807,7 +36956,7 @@ GameObject:
   - component: {fileID: 1509354270}
   m_Layer: 7
   m_Name: Attackpoint
-  m_TagString: Untagged
+  m_TagString: PlayerGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37224,7 +37373,7 @@ GameObject:
   - component: {fileID: 1541103956}
   m_Layer: 7
   m_Name: Cube (9)
-  m_TagString: Untagged
+  m_TagString: PlayerGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37692,7 +37841,7 @@ GameObject:
   - component: {fileID: 1594071623}
   m_Layer: 7
   m_Name: Cube (8)
-  m_TagString: Untagged
+  m_TagString: PlayerGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37899,7 +38048,7 @@ GameObject:
   - component: {fileID: 1619383155}
   m_Layer: 7
   m_Name: WeaponPosition
-  m_TagString: Untagged
+  m_TagString: PlayerGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38040,7 +38189,7 @@ GameObject:
   - component: {fileID: 1632562461}
   m_Layer: 7
   m_Name: Cube (3)
-  m_TagString: Untagged
+  m_TagString: PlayerGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38864,7 +39013,7 @@ GameObject:
   - component: {fileID: 1673080121}
   m_Layer: 7
   m_Name: Rails
-  m_TagString: Untagged
+  m_TagString: PlayerGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40069,7 +40218,7 @@ GameObject:
   - component: {fileID: 1732609058}
   m_Layer: 7
   m_Name: Cube (5)
-  m_TagString: Untagged
+  m_TagString: PlayerGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40211,7 +40360,7 @@ GameObject:
   - component: {fileID: 1759399613}
   m_Layer: 7
   m_Name: SMG
-  m_TagString: Untagged
+  m_TagString: PlayerGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40229,6 +40378,7 @@ Transform:
   m_LocalScale: {x: 0.17561382, y: 0.19785912, z: 1.0129}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 301879583}
   - {fileID: 1834885722}
   - {fileID: 1989276626}
   - {fileID: 344851619}
@@ -40965,7 +41115,6 @@ Transform:
   m_Children:
   - {fileID: 1509354270}
   - {fileID: 696425154}
-  - {fileID: 301879583}
   - {fileID: 1759399612}
   m_Father: {fileID: 830935895}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -41054,7 +41203,7 @@ GameObject:
   - component: {fileID: 1812378845}
   m_Layer: 7
   m_Name: Left
-  m_TagString: Untagged
+  m_TagString: PlayerGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41121,7 +41270,7 @@ GameObject:
   - component: {fileID: 1814652851}
   m_Layer: 7
   m_Name: Left1
-  m_TagString: Untagged
+  m_TagString: PlayerGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41433,7 +41582,7 @@ GameObject:
   - component: {fileID: 1834885722}
   m_Layer: 7
   m_Name: Stock
-  m_TagString: Untagged
+  m_TagString: PlayerGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42910,6 +43059,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 837280197}
   - {fileID: 1024720432}
   - {fileID: 647528589}
   - {fileID: 339276501}
@@ -44223,7 +44373,7 @@ GameObject:
   - component: {fileID: 1983488528}
   m_Layer: 7
   m_Name: Cube (2)
-  m_TagString: Untagged
+  m_TagString: PlayerGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44328,7 +44478,7 @@ GameObject:
   - component: {fileID: 1989276627}
   m_Layer: 7
   m_Name: Grip
-  m_TagString: Untagged
+  m_TagString: PlayerGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48146,6 +48296,7 @@ MonoBehaviour:
   healthText: {fileID: 323944121}
   getAudio: {fileID: 1385713437}
   sfx1: {fileID: 8300000, guid: d0704f2b987a37a40b61aaff1f97a02a, type: 3}
+  getTimer: {fileID: 837280198}
 --- !u!114 &417718268577513872
 MonoBehaviour:
   m_ObjectHideFlags: 0

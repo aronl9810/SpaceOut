@@ -12,8 +12,8 @@ public class Bullet : MonoBehaviour
     
     private void OnCollisionEnter(Collision collision){
         Transform hitTransform = collision.transform;
+        // Debug.Log(hitTransform);
         if(hitTransform.CompareTag("Player")){
-            Debug.Log("Hit Player");
             hitTransform.GetComponent<HealthManager>().TakeDamage(10);
         }
         Destroy(gameObject);

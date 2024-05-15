@@ -6,6 +6,8 @@ public class KeyPad : Interactable
 {
    [SerializeField]     
     private GameObject door;
+    [SerializeField]
+    private TimerScript timerscript;
     private bool doorOpen;
     // Start is called before the first frame update
     void Start()
@@ -22,6 +24,7 @@ public class KeyPad : Interactable
     protected override void Interact(){
         // base.Interact();
         doorOpen = true;
+        timerscript.startTimer();
         // Debug.Log(doorOpen);
         door.GetComponent<Animator>().SetBool("isOpen", doorOpen);
         promptMessage = "Good luck!";
