@@ -44,7 +44,7 @@ public class AttackState : BaseState
     }
 
     public void Shoot(){
-        Debug.Log("Shoot");
+        // Debug.Log("Shoot");
         // Store reference to gun barrel
         Transform gunbarrel = enemy.gunBarrel;
         // Create new Bullet

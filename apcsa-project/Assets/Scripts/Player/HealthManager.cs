@@ -15,11 +15,14 @@ public class HealthManager : MonoBehaviour
     [Header("Audio")]
     public AudioSource getAudio;
     public AudioClip sfx1;
+    public TimerScript getTimer;
+    private CursorHideShow cursorlock;
 
     // Start is called before the first frame update
     void Start()
     {
         initalHealthAmount = healthAmount;
+        cursorlock = GetComponent<CursorHideShow>();
     }
 
     // Update is called once per frame
@@ -28,6 +31,8 @@ public class HealthManager : MonoBehaviour
         healthText.text = "" + healthAmount + "/" + initalHealthAmount;
         if(healthAmount <= 0) 
         {
+            getTimer.killed();
+            cursorlock.SetCursorLock(false);
             SceneManager.LoadScene("Defeat");
         }
 
@@ -42,7 +47,7 @@ public class HealthManager : MonoBehaviour
         // Debug.Log(healthAmount);
         if(Input.GetKeyDown(KeyCode.Q))
         {
-            SceneManager.LoadScene("QuitMenu");
+            Application.Quit();
         }
     }
 
