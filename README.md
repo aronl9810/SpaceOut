@@ -10,7 +10,7 @@ Welcome to **Insert name whenver I feel like it**, This is a collaborative proje
 
 ## Credit and some potential copyright
 
-Sound effects are pulled [Sound Resource Lab](https://www.sounds-resource.com/) and orignally from [Value](https://www.valvesoftware.com/en/) (CS:GO & Half Life).
+Sound effects are pulled [Sound Resource Lab](https://www.sounds-resource.com/) and orignally from [Value](https://www.valvesoftware.com/en/) (CS:GO & Half Life) and [Nintendo](https://www.nintendo.com/us/) (Splatoon 2).
 
 All tutorials used are under our learning logs / blogs
 
