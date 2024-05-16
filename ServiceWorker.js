@@ -1,9 +1,9 @@
 const cacheName = "DefaultCompany-My project-0.1";
 const contentToCache = [
     "Build/SpaceOut.loader.js",
-    "Build/SpaceOut.framework.js.unityweb",
-    "Build/SpaceOut.data.unityweb",
-    "Build/SpaceOut.wasm.unityweb",
+    "Build/SpaceOut.framework.js",
+    "Build/SpaceOut.data",
+    "Build/SpaceOut.wasm",
     "TemplateData/style.css"
 
 ];
