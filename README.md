@@ -2,6 +2,8 @@
 
 Welcome to **SpaceOut**, This is a collaborative project between me and my Partner [Xin Yan](https://github.com/xinyanh4701). This is a PVE (Player vs Environemnt) setting where you are tasked to survive as long as possible against a horde of enemies that will approch you weapons free. You are given the XP5 as your weapon and your wits. Will you be able to survive as long as possible? Only you will decide your fate.
 
+Game can be directly accessed by clicking this [link](https://aronl9810.github.io/SpaceOut/index.html) or from the release section.
+
 ## Blog entires and Learning Logs
 
 **[Aron Lin](https://github.com/aronl9810/apcsa-freedom-project)**
