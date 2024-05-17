@@ -30,11 +30,11 @@ public class PatrolState : BaseState
             waitTimer += Time.deltaTime;
             if(waitTimer > 3)
             {
-                if(waypointIndex < enemy.path.waypoints.Count - 1)
+                if(waypointIndex < enemy.path[enemy.randomNum].waypoints.Count - 1)
                     waypointIndex++;
                 else
                     waypointIndex = 0;
-                enemy.Agent.SetDestination(enemy.path.waypoints[waypointIndex].position);
+                enemy.Agent.SetDestination(enemy.path[enemy.randomNum].waypoints[waypointIndex].position);
                 waitTimer = 0;
             }
             

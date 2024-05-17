@@ -29,4 +29,8 @@ public class KeyPad : Interactable
         door.GetComponent<Animator>().SetBool("isOpen", doorOpen);
         promptMessage = "Good luck!";
     }
+
+    public bool gameStarted(){
+        return doorOpen;
+    }
 }

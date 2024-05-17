@@ -13,7 +13,10 @@ public class Enemy : MonoBehaviour
     private float initialHealthAmount;
     
     public UnityEngine.AI.NavMeshAgent Agent { get => agent;}
-    public Path path;
+    [Header("Pathes")]
+    public Path[] path;
+    public int randomNum;
+    public EnemyManager getManager;
     public GameObject Player { get => player; }
     public Vector3 LastKnowPos { get => lastKnowPos ; set => lastKnowPos = value; }
     [Header("Health")]
@@ -32,6 +35,7 @@ public class Enemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        randomNum = Mathf.RoundToInt(Random.Range(0f,path.Length-1));
         stateMachine = GetComponent<StateMachine>();
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
         stateMachine.Intialise();
@@ -50,6 +54,7 @@ public class Enemy : MonoBehaviour
         // Debug.Log(player);
         currentState = stateMachine.activeState.ToString();
         if(healthAmount <= 0){
+            getManager.killed();
             Destroy(gameObject);
         }
     }
