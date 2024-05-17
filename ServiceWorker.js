@@ -1,4 +1,4 @@
-const cacheName = "DefaultCompany-My project-0.1";
+const cacheName = "DefaultCompany-SpaceOut-1.1.0";
 const contentToCache = [
     "Build/SpaceOut.loader.js",
     "Build/SpaceOut.framework.js",

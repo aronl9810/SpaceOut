@@ -1,6 +1,6 @@
 {
-    "name": "My project",
-    "short_name": "My project",
+    "name": "SpaceOut",
+    "short_name": "SpaceOut",
     "start_url": "index.html",
     "display": "fullscreen",
     "background_color": "#231F20",
